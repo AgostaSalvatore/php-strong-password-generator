@@ -9,25 +9,27 @@ require_once './functions.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <title>Password</title>
+    <style>
+        *{
+            background-color: black;
+            color : white;
+        }
+    </style>
 </head>
 <body>
 
-<form method="GET" action="">
-    <h1> Grande generatore di password</h1>
+<form method="GET" action="./password.php">
+    <h1> Random Password Generator</h1>
     <br>
 
     <div class="container">
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Genera Password</label>
-    
-            <input type="text" class="form-control border-dark" id="exampleInputPassword1"
-    
-            value="<?php echo $generatedPassword; ?>">
-    
-        </div>
+        
     
         <div class="form-group">
-    
+
+            <label for="lenght">
+                Password Lenght: 
+            </label>
             <input 
                 type="number"
                 id="length"
@@ -38,7 +40,7 @@ require_once './functions.php';
                 required
             >
         </div>
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-primary mt-2">
         Genera
         </button>
     </form>
