@@ -17,8 +17,8 @@ require_once './functions.php'
 </head>
 <body>
     <h1>Generated Password</h1>
-
-    <div class="container">
+<hr>
+    <div>
         <h2>
             <?php
             echo "La tua password e' : " .$generatedPassword ;
